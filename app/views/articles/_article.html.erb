@@ -1,5 +1,5 @@
 <div class="row">
-  <ul class="collapsible popout">
+  <ul class="collapsible popout expandable">
     <% articles.each do |article| %>
       <li>
         <div class="collapsible-header" style="font-size: 25px">
@@ -20,3 +20,10 @@
     font-weight: bolder;
   }
 </style>
+
+<script>
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {
+        accordion: false
+    });
+</script>
