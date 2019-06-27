@@ -1,13 +1,15 @@
 <li class="collection-item avatar">
   <div class="row">
-    <div class="col s10">
+    <div class="col s9">
       <img src="<%= comment.user.avatar_src %>" alt="avatar" class="circle">
       <span class="title" style="font-size: 20px"><%= comment.user.username %></span>
       <br>
       <%= render html: comment.body.html_safe %>
     </div>
-
     <div class="col s2">
+      <span class=" right"><%= comment.created_at.localtime.strftime("%Y-%m-%d") %></span>
+    </div>
+    <div class="col s1 right">
       <% if self?(comment) %>
         <%= link_to 'Edit', edit_comment_path(comment.id), class: 'waves-effect waves-light btn-small', style: 'float: right;' %>
       <% end %>

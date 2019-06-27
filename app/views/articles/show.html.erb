@@ -7,7 +7,13 @@
           <%= @article.title %>
         </h4>
       </div>
-      <div class="col s2 right">
+      <div class="col s2">
+        <br>
+        <span class=" right"><%= @article.created_at.localtime.strftime("%Y-%m-%d") %></span>
+        <br>
+        <span class=" right">by <%= @article.user.username %></span>
+      </div>
+      <div class="col s1 right">
         <% if self?(@article) %>
           <%= link_to 'Edit', edit_article_path(@article.id), class: 'waves-effect waves-light btn-small', style: 'float: right;' %>
         <% end %>

@@ -2,14 +2,14 @@
   "files": {
     "application-aceba41d14ac6e1adfac16ea6c0b758b5fd00946f53816366839c02f31fb51c3.js": {
       "logical_path": "application.js",
-      "mtime": "2019-06-26T12:12:49+08:00",
+      "mtime": "2019-06-27T16:05:20+08:00",
       "size": 243786,
       "digest": "aceba41d14ac6e1adfac16ea6c0b758b5fd00946f53816366839c02f31fb51c3",
       "integrity": "sha256-rOukHRSsbhrfrBbqbAt1i1/QCUb1OBY2aDnALzH7UcM="
     },
     "trix-c1540cd46229843929e17c8ba6b9bb7912a07868e0d28600fd84d6046475f73e.css": {
       "logical_path": "trix.css",
-      "mtime": "2019-06-24T10:38:00+08:00",
+      "mtime": "2019-06-27T15:47:07+08:00",
       "size": 13575,
       "digest": "c1540cd46229843929e17c8ba6b9bb7912a07868e0d28600fd84d6046475f73e",
       "integrity": "sha256-wVQM1GIphDkp4XyLprm7eRKgeGjg0oYA/YTWBGR19z4="
@@ -51,7 +51,7 @@
     },
     "application-ab4485cfa3032913ba3e60335fd6f439ca4e50c393ff40924bc47936f4058450.css": {
       "logical_path": "application.css",
-      "mtime": "2019-06-26T12:12:49+08:00",
+      "mtime": "2019-06-27T16:05:20+08:00",
       "size": 149287,
       "digest": "ab4485cfa3032913ba3e60335fd6f439ca4e50c393ff40924bc47936f4058450",
       "integrity": "sha256-q0SFz6MDKRO6PmAzX9b0OcpOUMOT/0CSS8R5NvQFhFA="

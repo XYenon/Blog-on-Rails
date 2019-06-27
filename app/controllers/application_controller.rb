@@ -8,10 +8,7 @@ class ApplicationController < ActionController::Base
   before_action :v_user
 
   def image_to_base64(file)
-    # require 'open-uri'
-    # tempfile = open('http://ofkzuey9y.bkt.clouddn.com/bala-logo.png')
     Base64.encode64(File.read(file))
-    # tempfile.close
   end
 
   private
