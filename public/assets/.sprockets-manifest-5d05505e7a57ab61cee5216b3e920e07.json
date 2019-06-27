@@ -1,0 +1,69 @@
+{
+  "files": {
+    "application-aceba41d14ac6e1adfac16ea6c0b758b5fd00946f53816366839c02f31fb51c3.js": {
+      "logical_path": "application.js",
+      "mtime": "2019-06-26T12:12:49+08:00",
+      "size": 243786,
+      "digest": "aceba41d14ac6e1adfac16ea6c0b758b5fd00946f53816366839c02f31fb51c3",
+      "integrity": "sha256-rOukHRSsbhrfrBbqbAt1i1/QCUb1OBY2aDnALzH7UcM="
+    },
+    "trix-c1540cd46229843929e17c8ba6b9bb7912a07868e0d28600fd84d6046475f73e.css": {
+      "logical_path": "trix.css",
+      "mtime": "2019-06-24T10:38:00+08:00",
+      "size": 13575,
+      "digest": "c1540cd46229843929e17c8ba6b9bb7912a07868e0d28600fd84d6046475f73e",
+      "integrity": "sha256-wVQM1GIphDkp4XyLprm7eRKgeGjg0oYA/YTWBGR19z4="
+    },
+    "application-7aebbb1a02a47a4e433edda1327f50c5aa7a9d95352036fb9ab89b759c85c81d.css": {
+      "logical_path": "application.css",
+      "mtime": "2019-06-25T08:43:17+08:00",
+      "size": 149287,
+      "digest": "7aebbb1a02a47a4e433edda1327f50c5aa7a9d95352036fb9ab89b759c85c81d",
+      "integrity": "sha256-euu7GgKkek5DPt2hMn9Qxap6nZU1IDb7mribdZyFyB0="
+    },
+    "MaterialIcons-Regular-8c998b4a9c0acbb9fe5dd572c206a5a33fdd5ca2b58db87fc3b893beac85068d.eot": {
+      "logical_path": "MaterialIcons-Regular.eot",
+      "mtime": "2019-06-18T17:58:57+08:00",
+      "size": 143258,
+      "digest": "8c998b4a9c0acbb9fe5dd572c206a5a33fdd5ca2b58db87fc3b893beac85068d",
+      "integrity": "sha256-jJmLSpwKy7n+XdVywgaloz/dXKK1jbh/w7iTvqyFBo0="
+    },
+    "MaterialIcons-Regular-a87d66c91b2e7dc5530aef76c03bd6a3d25ea5826110bf4803b561b811cc8726.woff2": {
+      "logical_path": "MaterialIcons-Regular.woff2",
+      "mtime": "2019-06-18T17:58:57+08:00",
+      "size": 44300,
+      "digest": "a87d66c91b2e7dc5530aef76c03bd6a3d25ea5826110bf4803b561b811cc8726",
+      "integrity": "sha256-qH1myRsufcVTCu92wDvWo9JepYJhEL9IA7VhuBHMhyY="
+    },
+    "MaterialIcons-Regular-c4a1baec300d09e03a8380b85918267ee80faae8e00c6c56b48e2e74b1d9b38d.woff": {
+      "logical_path": "MaterialIcons-Regular.woff",
+      "mtime": "2019-06-18T17:58:57+08:00",
+      "size": 57620,
+      "digest": "c4a1baec300d09e03a8380b85918267ee80faae8e00c6c56b48e2e74b1d9b38d",
+      "integrity": "sha256-xKG67DANCeA6g4C4WRgmfugPqujgDGxWtI4udLHZs40="
+    },
+    "MaterialIcons-Regular-b7f4a3ab562048f28dd1fa691601bc43363a61d0f876d16d8316c52e4f32d696.ttf": {
+      "logical_path": "MaterialIcons-Regular.ttf",
+      "mtime": "2019-06-18T17:58:57+08:00",
+      "size": 128180,
+      "digest": "b7f4a3ab562048f28dd1fa691601bc43363a61d0f876d16d8316c52e4f32d696",
+      "integrity": "sha256-t/Sjq1YgSPKN0fppFgG8QzY6YdD4dtFtgxbFLk8y1pY="
+    },
+    "application-ab4485cfa3032913ba3e60335fd6f439ca4e50c393ff40924bc47936f4058450.css": {
+      "logical_path": "application.css",
+      "mtime": "2019-06-26T12:12:49+08:00",
+      "size": 149287,
+      "digest": "ab4485cfa3032913ba3e60335fd6f439ca4e50c393ff40924bc47936f4058450",
+      "integrity": "sha256-q0SFz6MDKRO6PmAzX9b0OcpOUMOT/0CSS8R5NvQFhFA="
+    }
+  },
+  "assets": {
+    "application.js": "application-aceba41d14ac6e1adfac16ea6c0b758b5fd00946f53816366839c02f31fb51c3.js",
+    "trix.css": "trix-c1540cd46229843929e17c8ba6b9bb7912a07868e0d28600fd84d6046475f73e.css",
+    "application.css": "application-ab4485cfa3032913ba3e60335fd6f439ca4e50c393ff40924bc47936f4058450.css",
+    "MaterialIcons-Regular.eot": "MaterialIcons-Regular-8c998b4a9c0acbb9fe5dd572c206a5a33fdd5ca2b58db87fc3b893beac85068d.eot",
+    "MaterialIcons-Regular.woff2": "MaterialIcons-Regular-a87d66c91b2e7dc5530aef76c03bd6a3d25ea5826110bf4803b561b811cc8726.woff2",
+    "MaterialIcons-Regular.woff": "MaterialIcons-Regular-c4a1baec300d09e03a8380b85918267ee80faae8e00c6c56b48e2e74b1d9b38d.woff",
+    "MaterialIcons-Regular.ttf": "MaterialIcons-Regular-b7f4a3ab562048f28dd1fa691601bc43363a61d0f876d16d8316c52e4f32d696.ttf"
+  }
+}

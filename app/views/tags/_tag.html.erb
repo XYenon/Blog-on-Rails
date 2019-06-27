@@ -1,0 +1,7 @@
+<% @tags.each do |tag| %>
+  <%= link_to tag_path(tag.name) do %>
+    <div class="chip">
+      <%= tag.name %>
+    </div>
+  <% end %>
+<% end %>

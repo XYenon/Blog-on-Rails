@@ -1,0 +1,49 @@
+<%= form_for(user) do |f| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% user.errors.full_messages.each do |message| %>
+          <li class="red-text text-darken-2">
+            <i class="material-icons" style="font-size: 15px">error</i>
+            <span style="font-size: 15px"><%= message %></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.text_field :username, required: true, autofocus: true, class: 'validate' %>
+      <%= label_tag :username, 'Username' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.text_field :email, required: true, class: 'validate' %>
+      <%= label_tag :email, 'E-Mail' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.text_field :profile, class: 'validate' %>
+      <%= label_tag :profile, 'Profile' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.password_field :password, class: 'validate' %>
+      <%= label_tag :password, 'Password' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.password_field :password_confirmation, class: 'validate' %>
+      <%= label_tag :password_confirmation, 'Password Confirmation' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s3"></div>
+    <%= f.submit 'Submit', class: 'col s6 waves-effect waves-light btn' %>
+    <div class="col s3"></div>
+  </div>
+<% end %>

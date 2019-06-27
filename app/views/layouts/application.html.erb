@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+  <title>BlogOnRails</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.loli.net/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container">
+        <span id="logo-container" class="brand-logo">
+          <%= link_to 'Blog', root_path %>
+        </span>
+
+    <ul class="right hide-on-med-and-down">
+      <% if @current_user.nil? %>
+        <li><%= link_to 'Login', login_path %></li>
+        <li><%= link_to 'Register', register_path %></li>
+      <% else %>
+        <% if admin? %>
+          <li><%= link_to 'Admin panel', admin_path %></li>
+        <% end %>
+        <li><%= link_to 'New article', new_article_path %></li>
+        <li onmouseenter="show_info()">
+          <a id="user"><%= @current_user.username %></a>
+          <div hidden id="user_info" class="card" onmouseleave="hide_info()" style="position: fixed; top: 3px; right: 10px; width: 300px; z-index: 1000">
+            <div class="card-image">
+              <img src="<%= @current_user.avatar_src %>" alt="avatar">
+            </div>
+            <div class="card-action">
+              <%= link_to 'My Info', user_path %>
+              <%= link_to 'My Articles', user_articles_path(user_id: @current_user.id) %>
+              <%= link_to 'My Comments', user_comments_path(user_id: @current_user.id) %>
+              <%= link_to 'Logout', logout_path, method: :delete %>
+            </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+
+    <ul id="nav-mobile" class="sidenav">
+      <% if @current_user.nil? %>
+        <li><%= link_to 'Login', login_path %></li>
+        <li><%= link_to 'Register', register_path %></li>
+      <% else %>
+        <% if admin? %>
+          <li><%= link_to 'Admin panel', admin_path %></li>
+        <% end %>
+        <li><%= link_to 'New article', new_article_path %></li>
+        <li><%= link_to 'My Info', user_path %></li>
+        <li><%= link_to 'My Articles', user_articles_path(user_id: @current_user.id) %></li>
+        <li><%= link_to 'My Comments', user_comments_path(user_id: @current_user.id) %></li>
+        <li><%= link_to 'Logout', logout_path, method: :delete %></li>
+      <% end %>
+    </ul>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<script>
+    show_info = function () {
+        $('#user_info').show(100);
+    };
+
+    hide_info = function () {
+        $('#user_info').hide(100);
+    };
+</script>
+
+<script>
+    $(document).ready(function () {
+        M.updateTextFields();
+        $(function () {
+            $('.sidenav').sidenav();
+        });
+    });
+</script>
+
+<% unless notice.nil? %>
+  <script>
+      M.toast({html: '<%= notice %>'});
+  </script>
+<% end %>
+</body>
+</html>

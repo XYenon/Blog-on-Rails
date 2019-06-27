@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-image">
+    <img src="<%= user.avatar_src %>" alt="avatar">
+  </div>
+  <div class="card-content">
+    <span class="card-title"><%= user.username %></span>
+    <p><%= user.profile %></p>
+  </div>
+  <div class="card-action"><%= link_to 'Index', root_path %></div>
+  <div class="card-action"><%= link_to 'Search', search_path %></div>
+  <div class="card-action"><%= link_to 'Users', users_path %></div>
+  <div class="card-action"><%= link_to 'Tags', tags_path %></div>
+</div>

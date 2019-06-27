@@ -1,0 +1,70 @@
+<ul class="collapsible popout">
+  <li class="active">
+    <div class="collapsible-header row title">
+      <img src="<%= @article.user.avatar_src %>" alt="avatar" style="top: -1rem; left: -1rem; height: 5em">
+      <div class="col s9">
+        <h4>
+          <%= @article.title %>
+        </h4>
+      </div>
+      <div class="col s2 right">
+        <% if self?(@article) %>
+          <%= link_to 'Edit', edit_article_path(@article.id), class: 'waves-effect waves-light btn-small', style: 'float: right;' %>
+        <% end %>
+        <br>
+        <br>
+        <% if self_or_admin?(@article) %>
+          <%= link_to 'Destroy', @article,
+                      method: :delete,
+                      data: {confirm: 'Are you sure?'},
+                      class: 'red waves-effect waves-light btn-small',
+                      style: 'float: right;' %>
+        <% end %>
+      </div>
+    </div>
+    <div class="collapsible-body">
+      <div class="row">
+        <%= render html: @article.text.html_safe %>
+      </div>
+
+      <div class=" row">
+        <div class="col s12">
+          <div class="chips row" id="tags">
+            Tags:
+            <% unless @article.tags.nil? %>
+              <% @article.tags.each do |tag| %>
+                <%= link_to tag_path(tag.name) do %>
+                  <div class="chip" tabindex="0">
+                    <%= tag.name %>
+                  </div>
+                <% end %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <h5>Comments</h5>
+        <ul class="collection">
+          <%= render @article.comments %>
+        </ul>
+        <h6>Add a comment</h6>
+        <%= render 'comments/form', article: @article, comment: @comment %>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+</script>
+
+<style>
+  strong {
+    font-weight: bolder;
+  }
+</style>

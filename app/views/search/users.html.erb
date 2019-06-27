@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col s3">
+    <div class="row">
+      <div class="col s12">
+        <%= render 'users/info', user: @user %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s9">
+    <div class="row">
+      <div class="card">
+        <div class="card-content">
+          <%= form_tag("/search/users", method: "get", class: 'input-field') do %>
+            <div class="input-field">
+              <i class="material-icons prefix">search</i>
+              <%= text_field_tag :username %>
+              <%= label_tag(:username, "Search users") %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <%= render 'users/user', users: @users %>
+    </div>
+  </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+</script>

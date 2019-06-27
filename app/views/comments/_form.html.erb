@@ -1,0 +1,33 @@
+<%= stylesheet_link_tag 'trix' %>
+
+<%= form_for([article, comment]) do |f| %>
+  <form>
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.text_area :body, required: true, class: 'materialize-textarea', hidden: 'hidden' %>
+        <trix-editor input="comment_body"></trix-editor>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s9"></div>
+      <div class="col s3">
+        <%= f.submit 'Submit', class: 'btn waves-effect waves-light', style: 'float: right;' %>
+      </div>
+    </div>
+  </form>
+<% end %>
+
+<% if comment.errors.any? %>
+  <div id="error_explanation">
+    <ul>
+      <% comment.errors.full_messages.each do |message| %>
+        <li class="red-text text-darken-2">
+          <i class="material-icons" style="font-size: 15px">error</i>
+          <span style="font-size: 15px"><%= message %></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<script type="text/javascript" src="https://cdnjs.loli.net/ajax/libs/trix/1.1.1/trix.js"></script>

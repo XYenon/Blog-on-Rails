@@ -1,0 +1,22 @@
+<div class="row">
+  <ul class="collapsible popout">
+    <% articles.each do |article| %>
+      <li>
+        <div class="collapsible-header" style="font-size: 25px">
+          <%= article.title %>
+        </div>
+        <div class="collapsible-body">
+          <%= render html: article.text.html_safe %>
+          <br>
+          <span><%= link_to 'Show Detail', article %></span>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<style>
+  strong {
+    font-weight: bolder;
+  }
+</style>

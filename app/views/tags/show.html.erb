@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col s3">
+    <div class="row">
+      <div class="col s12">
+        <%= render 'users/info', user: @user %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s9">
+    <div class="row">
+      <div class="card">
+        <div class="card-content blue-grey-text">
+          <span class="card-title">Tags</span>
+          <%= render 'tag' %>
+        </div>
+      </div>
+    </div>
+
+    <%= render 'articles/article', articles: @articles %>
+
+    <div class="row">
+      <ul class="pagination right">
+        <% if @page == 1 %>
+          <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+        <% else %>
+          <li class="waves-effect"><%= link_to page: @page - 1 do %><i class="material-icons">chevron_left</i>
+            <% end %></li>
+        <% end %>
+
+        <% (1..@page_count).each do |n| %>
+          <li class="
+            <% if @page == n %>active
+            <% else %>waves-effect
+            <% end %>"><%= link_to n, page: n %></li>
+        <% end %>
+
+        <% if @page == @page_count %>
+          <li class="disabled"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+        <% else %>
+          <li class="waves-effect"><%= link_to page: @page + 1 do %><i class="material-icons">chevron_right</i>
+            <% end %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+</script>

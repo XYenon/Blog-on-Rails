@@ -1,0 +1,83 @@
+<div class="row">
+  <div class="col s3">
+    <div class="row">
+      <div class="col s12">
+        <%= render 'users/info', user: @user %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s9">
+    <div class="row">
+      <div class="card">
+        <div class="card-content">
+          <%= form_tag("/search/articles", method: "get", class: 'input-field') do %>
+            <div class="input-field">
+              <i class="material-icons prefix">search</i>
+              <%= text_field_tag :keyword %>
+              <%= label_tag(:keyword, "Search articles") %>
+            </div>
+            <div class="row">
+              <div class="col s3">
+                <div class="switch">
+                  <label>
+                    Title
+                    <%= check_box_tag :enable_title, 'true', true %>
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="switch">
+                  <label>
+                    Content
+                    <%= check_box_tag :enable_content, 'true', true %>
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="switch">
+                  <label>
+                    User
+                    <%= check_box_tag :enable_user, 'true', true %>
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="switch">
+                  <label>
+                    Tag
+                    <%= check_box_tag :enable_tag, 'true', true %>
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <div class="card-content">
+          <%= form_tag("/search/users", method: "get", class: 'input-field') do %>
+            <div class="input-field">
+              <i class="material-icons prefix">search</i>
+              <%= text_field_tag :username %>
+              <%= label_tag(:username, "Search users") %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+</script>
