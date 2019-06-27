@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bba49b7-7a42-43d5-8bc7-a333f9952841" name="Default Changelist" comment="" />
+    <list default="true" id="4bba49b7-7a42-43d5-8bc7-a333f9952841" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a681c61c-3c7b-42b9-8b79-2d3ebac86f6b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d122971f-4e60-4999-a943-7c582b4aec37.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d122971f-4e60-4999-a943-7c582b4aec37/storage_v2/_src_/schema/untitled_development.4ezRlw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,9 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="260">
+                <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -169,19 +177,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Blog_on_Rails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog_on_Rails" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-on-Rails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-on-Rails" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,6 +530,7 @@
       <workItem from="1561594935691" duration="4732000" />
       <workItem from="1561603887136" duration="355000" />
       <workItem from="1561604267910" duration="8104000" />
+      <workItem from="1561622734265" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1561622273741</created>
@@ -530,11 +539,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561622273742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1561623021878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561623021878</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214809000" />
+    <option name="totallyTimeSpent" value="215106000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -547,8 +563,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49529782" visible="true" weight="0.25871313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49529782" visible="true" weight="0.1930295" />
       <window_info id="Structure" order="1" sideWeight="0.5047022" side_tool="true" weight="0.25201073" />
       <window_info id="Favorites" order="2" sideWeight="0.50124687" side_tool="true" weight="0.19369973" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32916668" />
@@ -561,7 +578,7 @@
       <window_info anchor="bottom" id="TODO" order="7" weight="0.54558825" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49865952" visible="true" weight="0.2485294" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49865952" visible="true" weight="0.3779412" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013405" side_tool="true" weight="0.2485294" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49597856" weight="0.62941176" />
       <window_info anchor="bottom" id="Statistic" order="13" sideWeight="0.4966488" weight="0.46911764" />
@@ -944,7 +961,9 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="260">
+            <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
