@@ -79,6 +79,7 @@ class SearchController < ApplicationController
   end
 
   def search_by_tag(keyword)
+    keyword = '%' + keyword + '%'
     tags = Tag.where('name LIKE ?', keyword)
     articles = []
     tags&.each do |tag|

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/user', to: 'users#show', as: 'user'
   get '/user/edit', to: 'users#edit', as: 'edit_user'
   patch '/user', to: 'users#update'
-  delete '/user/destroy', to: 'users#destroy'
+  delete '/user', to: 'users#destroy'
 
   get '/search', to: 'search#index'
   get '/search/articles', to: 'search#articles'

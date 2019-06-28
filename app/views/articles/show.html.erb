@@ -2,7 +2,7 @@
   <li class="active">
     <div class="collapsible-header row title">
       <img src="<%= @article.user.avatar_src %>" alt="avatar" style="top: -1rem; left: -1rem; height: 5em">
-      <div class="col s9">
+      <div class="col s8">
         <h4>
           <%= @article.title %>
         </h4>
@@ -13,7 +13,7 @@
         <br>
         <span class=" right">by <%= @article.user.username %></span>
       </div>
-      <div class="col s1 right">
+      <div class="col s2 right">
         <% if self?(@article) %>
           <%= link_to 'Edit', edit_article_path(@article.id), class: 'waves-effect waves-light btn-small', style: 'float: right;' %>
         <% end %>
