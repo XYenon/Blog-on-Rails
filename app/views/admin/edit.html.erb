@@ -36,6 +36,19 @@
           </div>
         </div>
         <div class="row">
+          <div class="col s2"></div>
+          <div class="col s8">
+            <div class="switch">
+              <label>
+                Admin
+                <%= f.check_box :admin %>
+                <span class="lever"></span>
+              </label>
+            </div>
+          </div>
+          <div class="col s2"></div>
+        </div>
+        <div class="row">
           <div class="col s3"></div>
           <%= f.submit 'Submit', class: 'col s6 waves-effect waves-light btn-large' %>
           <div class="col s3"></div>
