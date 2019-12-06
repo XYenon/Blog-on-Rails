@@ -103,7 +103,7 @@ GEM
     nokogiri (1.10.5-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     public_suffix (3.1.0)
-    puma (3.12.1)
+    puma (3.12.2)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -196,7 +196,7 @@ DEPENDENCIES
   material_icons
   materialize-sass (~> 1.0.0)
   mysql2 (>= 0.3.18, < 0.6.0)
-  puma (~> 3.7)
+  puma (~> 3.12)
   rails (~> 5.1.7)
   sass-rails (~> 5.0)
   selenium-webdriver
